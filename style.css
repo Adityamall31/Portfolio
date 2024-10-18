@@ -1,0 +1,174 @@
+/* General Body and Text Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1A202C;
+    color: #CBD5E0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* Animation for zoom on hover */
+.zoom:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-zoom:hover {
+    transform: scale(1.15);
+    transition: transform 0.4s ease;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(26, 32, 44, 0.9);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #4A5568;
+    transition: background-color 0.3s ease;
+}
+
+/* Home Section */
+#home {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1.title-font {
+    animation: fadeInTitle 1.5s ease;
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+img {
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInText 1.5s ease;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1, h2 {
+    color: #E2E8F0;
+}
+
+/* Skills Section */
+#skills .p-4 {
+    animation: fadeInSkill 1s ease;
+}
+
+@keyframes fadeInSkill {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1.sm\:text-3xl {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Projects Section */
+#projects img {
+    transition: transform 0.5s ease;
+}
+
+#projects img:hover {
+    transform: scale(1.05);
+}
+
+button a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2B6CB0;
+}
+
+/* Footer */
+footer {
+    background-color: #2D3748;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    color: #CBD5E0;
+}
+
+/* Contact Icons */
+.fa-envelope:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-youtube:hover,
+.fa-reddit:hover,
+.fa-telegram:hover {
+    color: #63B3ED;
+    transition: color 0.3s ease-in-out;
+}
